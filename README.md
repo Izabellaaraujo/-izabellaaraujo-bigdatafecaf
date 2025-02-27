@@ -26,13 +26,6 @@ Este projeto cria um pipeline de dadospara processar leituras de temperatura de 
 ---
 
 ## Configuração e Execução
-
-### **Clonar o repositório**
-```bash
-git clone https://github.com/seu_usuario/pipeline_iot.git
-cd pipeline_iot
-```
-
 ### **Configurar e executar o banco de dados PostgreSQL no Docker**
 ```bash
 docker run --name postgres-iot -e POSTGRES_PASSWORD=sua_senha -p 5432:5432 -d postgres
@@ -81,16 +74,6 @@ CREATE VIEW avg_temp_por_dispositivo AS
 SELECT device_id, AVG(temperature) as avg_temp
 FROM temperature_readings
 GROUP BY device_id;
-```
-
-## Publicação no GitHub
-Para enviar o projeto ao GitHub:
-```bash
-git init
-git add .
-git commit -m "Projeto inicial: Pipeline de Dados IoT"
-git remote add origin URL_DO_SEU_REPOSITORIO
-git push -u origin main
 ```
 
 ## Conclusão
