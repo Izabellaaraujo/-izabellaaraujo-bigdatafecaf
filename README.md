@@ -66,7 +66,7 @@ python pipeline.py
 streamlit run dashboard.py
 ```
 
-## 📊 Visualização dos Dados
+## Visualização dos Dados
 ### O dashboard interativo exibe:
 Média de temperatura por dispositivo
 Leituras de temperatura por hora
